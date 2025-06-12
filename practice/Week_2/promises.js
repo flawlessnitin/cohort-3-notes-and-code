@@ -21,7 +21,7 @@
 // First have reference a little bit from /assignments/week_2/promisifiedCleanFile.js
 class Promise2 {
   constructor(fn) {
-    function afterDone() {
+    const afterDone = () => {
       this.resolve();
     }
     fn(afterDone);
